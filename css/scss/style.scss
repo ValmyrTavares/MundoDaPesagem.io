@@ -1,4 +1,13 @@
 /*8888888888888888888888888888888888
+Variáveis
+888888888888888888888888888888888888*/
+$azaul-escuro:#164ca1;
+$branco-box:#e7e7e8;
+
+
+
+
+/*8888888888888888888888888888888888
 geral
 888888888888888888888888888888888888*/
 ul, li,a{
@@ -8,6 +17,10 @@ ul, li,a{
 }
 *{
     box-sizing: border-box;
+}
+h1{
+    color:$azaul-escuro;
+    font-family: arial;
 }
 
 
@@ -53,5 +66,79 @@ header{
         }
     }
 }
+article{
+    padding:5%;
+    h1{
+        text-align: center;
+        font-size: 2.8vw;
+    }
+    p{
+        text-align: center;
+        font-size: 1.8vw;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+
+/*8888888888888888888888888888888888
+SERVICE
+888888888888888888888888888888888888*/
+.service{
+    display:flex;   
+    padding:5%;
+    div{
+        background:$branco-box;
+        margin:2%;
+        width: 29%;
+        padding:5%;
+        img{
+            width: 100%;
+        }
+        h1{
+            text-align:center;
+            font-size: 2.8vw;
+        }
+       
+    }
+}
+
+
+
+
+/*8888888888888888888888888888888888
+            MOBILE
+888888888888888888888888888888888888*/
      
-  
+  @media(max-width:600px){
+    article{
+        h1{
+            font-size:3.5vw;
+        }
+        p{
+            font-size:13px;
+        }
+    }
+    .service{
+        display:flex;   
+        flex-direction: column;    
+        div{          
+            margin: 5%;
+            width: 90%;
+            padding: 12%;  
+            h1{    
+                font-size:5.7vw;
+            }    
+    
+        }     
+        
+    }
+    
+}
+
+
+
+
+
+
