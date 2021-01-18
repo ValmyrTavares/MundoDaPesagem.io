@@ -30,6 +30,8 @@ header {
   background-image: url("../asset/tela1.png");
   background-size: cover;
   background-position: center center; }
+  header .btn-mobile {
+    display: none; }
   header .main-logo {
     width: 40%;
     margin: 5px 30%;
@@ -161,6 +163,29 @@ footer {
             MOBILE
 888888888888888888888888888888888888*/
 @media (max-width: 600px) {
+  header .btn-mobile {
+    display: block;
+    width: 12%;
+    position: absolute;
+    top: 7vw;
+    left: 16px; }
+  header ul {
+    display: flex;
+    flex-direction: column;
+    height: 43vw;
+    width: 53%;
+    position: absolute;
+    margin: 2px;
+    top: 29%;
+    left: 10px;
+    background: #164ca1;
+    transition: .4s;
+    opacity: 0;
+    padding: 2px 5%; }
+    header ul li {
+      font-size: 3.4vw; }
+  header main:hover ul {
+    opacity: 1; }
   article h1 {
     font-size: 3.5vw; }
   article p {
@@ -172,6 +197,9 @@ footer {
       margin: 5%;
       width: 90%;
       padding: 6%; }
+      .service div img {
+        width: 82%;
+        margin: 1px 9%; }
       .service div h1 {
         font-size: 7.7vw; }
   .questions {
