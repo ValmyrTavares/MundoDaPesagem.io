@@ -24,7 +24,7 @@ header {
   position: relative;
   width: 100%;
   height: 60vw;
-  background-image: url("../../asset/tela1.png");
+  background-image: url("../asset/tela1.png");
   background-size: cover;
   background-position: center center; }
   header .main-logo {
@@ -95,6 +95,6 @@ SERVICE
     .service div {
       margin: 5%;
       width: 90%;
-      padding: 12%; }
+      padding: 6%; }
       .service div h1 {
-        font-size: 5.7vw; } }
+        font-size: 7.7vw; } }
