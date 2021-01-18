@@ -5,7 +5,7 @@ Variáveis
 /*8888888888888888888888888888888888
 geral
 888888888888888888888888888888888888*/
-ul, li, a {
+ul, li, a, p {
   list-style: none;
   text-decoration: none;
   font-family: arial; }
@@ -24,7 +24,7 @@ header {
   position: relative;
   width: 100%;
   height: 60vw;
-  background-image: url("../asset/tela1.png");
+  background-image: url("../../asset/tela1.png");
   background-size: cover;
   background-position: center center; }
   header .main-logo {
@@ -81,6 +81,52 @@ SERVICE
       text-align: center;
       font-size: 2.8vw; }
 
+.questions {
+  background: #164ca1;
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 3%; }
+  .questions h1 {
+    color: white;
+    font-size: 2.3vw; }
+  .questions button {
+    font-size: 3vw;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 5.3vw; }
+
+.contact-us {
+  background-image: url("../../asset/map.png");
+  background-size: cover;
+  background-position: center center;
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .contact-us article P {
+    text-align: left;
+    font-size: 2.5vw; }
+    .contact-us article P span {
+      color: #164ca1;
+      font-weight: bold; }
+  .contact-us article p:nth-child(4) {
+    color: #164ca1; }
+  .contact-us form {
+    display: block; }
+    .contact-us form h1 {
+      color: white;
+      margin: 10px 6%; }
+    .contact-us form input {
+      width: 90%;
+      height: 3.5vw;
+      margin: 10px 6%; }
+    .contact-us form textarea {
+      width: 90%;
+      height: 7.5vw;
+      margin: 10px 6%;
+      color: black;
+      font-size: 18px;
+      padding: 2%; }
+
 /*8888888888888888888888888888888888
             MOBILE
 888888888888888888888888888888888888*/
@@ -88,7 +134,7 @@ SERVICE
   article h1 {
     font-size: 3.5vw; }
   article p {
-    font-size: 13px; }
+    font-size: 15px; }
   .service {
     display: flex;
     flex-direction: column; }
@@ -97,4 +143,23 @@ SERVICE
       width: 90%;
       padding: 6%; }
       .service div h1 {
-        font-size: 7.7vw; } }
+        font-size: 7.7vw; }
+  .questions {
+    padding: 3% 4%; }
+    .questions h1 {
+      font-size: 3.3vw; }
+    .questions button {
+      font-size: 6.3vw; }
+  .contact-us {
+    display: flex;
+    flex-direction: column; }
+    .contact-us article {
+      background: white; }
+    .contact-us form {
+      background: #164ca1; }
+      .contact-us form input {
+        height: 6.5vw;
+        font-size: 13px; }
+      .contact-us form textarea {
+        height: 150px;
+        font-size: 15px; } }
