@@ -22,7 +22,9 @@ h1{
     color:$azaul-escuro;
     font-family: arial;
 }
-
+img{
+    width: 100%;
+}
 
 
 /*8888888888888888888888888888888888
@@ -103,6 +105,9 @@ SERVICE
        
     }
 }
+/*8888888888888888888888888888888888
+Dúvidas Frequentes 
+888888888888888888888888888888888888*/
 .questions{
     background:$azaul-escuro;
     display:flex;
@@ -120,6 +125,9 @@ SERVICE
         font-size:5.3vw;
     }
 }
+/*8888888888888888888888888888888888
+Fale Conosco
+888888888888888888888888888888888888*/
 .contact-us{
     background-image:url("../../asset/map.png");
     background-size: cover;
@@ -163,6 +171,33 @@ SERVICE
 }
 
 /*8888888888888888888888888888888888
+FOOTER
+888888888888888888888888888888888888*/
+
+footer{
+    background:$azaul-escuro;
+    width: 100%;
+    display:grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    padding: 1vw 3vw;
+    .menu-footer{
+        font-size: 1.3vw;
+    color:white;
+    padding: 2vw 3vw;
+    }
+    .sociais-midias{
+        display: flex;
+     justify-content: space-around;
+     align-items: center;
+        img{
+            width: 3vw;
+            height: 3.7vw;
+        }
+    }
+ 
+}
+
+/*8888888888888888888888888888888888
             MOBILE
 888888888888888888888888888888888888*/     
   @media(max-width:600px){
@@ -201,11 +236,14 @@ SERVICE
      flex-direction: column;
      article{
          background:white;
+         p{
+             font-size:16px;
+         }
      };
      form{
          background:$azaul-escuro;
          input{
-            height: 6.5vw;
+            height: 8.5vw;
             font-size: 13px;
          }
          textarea{
@@ -214,6 +252,27 @@ SERVICE
          }
 
      }
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        align-items: center;
+        .menu-footer{
+            p:first-child{
+                display:none
+            }
+            p{
+                text-align: center;
+                line-height: 20px;
+            }
+        }
+        .sociais-midias{
+            img{
+                width: 5vw;
+                height: 6vw;
+            }
+        }
+
     }
 }
 
