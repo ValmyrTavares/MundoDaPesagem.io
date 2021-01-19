@@ -373,12 +373,12 @@ footer{
         }
         .menu-image{       
             position: absolute;
-            top: 60%;
+            top: 60%!important;
             padding: 0 10%;
             display: flex;
             justify-content: space-around;
                 img{
-                    width: 20%;
+                    width: 67px;
                     margin:2px 1%;
                 }  
         }

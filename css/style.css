@@ -27,7 +27,7 @@ header {
   position: relative;
   width: 100%;
   height: 60vw;
-  background-image: url("../asset/tela1.png");
+  background-image: url("../../asset/tela1.png");
   background-size: cover;
   background-position: center center; }
   header .sociais-midias-header {
@@ -194,7 +194,7 @@ Dúvidas Frequentes
 Fale Conosco
 888888888888888888888888888888888888*/
 .contact-us {
-  background-image: url("../asset/map.png");
+  background-image: url("../../asset/map.png");
   background-size: cover;
   background-position: center center;
   display: grid;
@@ -282,10 +282,10 @@ footer {
     position: absolute;
     top: 60%;
     padding: 0 10%;
-    display: none;
+    display: flex;
     justify-content: space-around; }
     header .menu-image img {
-      width: 20%;
+      width: 67px;
       margin: 2px 1%; }
   article h1 {
     font-size: 5.5vw; }
