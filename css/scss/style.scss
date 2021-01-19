@@ -37,9 +37,7 @@ header{
     background-image:url("../../asset/tela1.png");
     background-size: cover;
     background-position: center center;
-    .btn-mobile{
-        display: none
-    }
+  
     .main-logo{
         width: 40%;
         margin: 5px 30%;
@@ -57,18 +55,24 @@ header{
                 margin:2px 1%;
             }  
     }
-    ul{     
-        position: absolute;
-        margin: 2px;
-        top:90%;
-        width: 100%;
-        display:flex;
-        justify-content: space-around;
-        padding: 0 10%;
-        a{
-            color:white;
-            font-size: 1.5vw;
+    main{
+        .btn-mobile{
+            display: none
         }
+        ul{     
+            position: absolute;
+            margin: 2px;
+            top:90%;
+            width: 100%;
+            display:flex;
+            justify-content: space-around;
+            padding: 0 10%;
+            a{
+                color:white;
+                font-size: 1.5vw;
+            }
+        }
+
     }
 }
 article{
@@ -270,30 +274,32 @@ footer{
 888888888888888888888888888888888888*/     
 @media(max-width:600px){
     header{
-        .btn-mobile{
-            display: block;
-            width: 12%;
-            position: absolute;
-            top: 7vw;
-            left: 16px;
-            
-        }
-        ul{
-            display:flex;
-            flex-direction: column;
-            height: 43vw;
-            width: 53%;
-            position: absolute;
-            margin: 2px;
-            top: 29%;
-            left: 10px;
-            background:$azaul-escuro;
-            transition: .4s;
-            opacity: 0;        
-            padding: 2px 5%;
-            li{
-                font-size:3.4vw;
-           }
+        main{
+            .btn-mobile{
+                display: block;
+                width: 12%;
+                position: absolute;
+                top: 7vw;
+                left: 16px;
+                
+            }
+            ul{
+                display:flex;
+                flex-direction: column;
+                height: 43vw;
+                width: 29%;
+                position: absolute;
+                margin: 2px;
+                top: 45%;
+                left: -4px;
+                background:$azaul-escuro;
+                transition: .4s;
+                opacity: 0;        
+                padding: 2px 5%;
+                li{
+                    font-size:2.4vw;
+               }
+            }
         }
         main:hover ul{
             opacity: 1;
