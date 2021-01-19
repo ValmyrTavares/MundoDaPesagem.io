@@ -224,18 +224,18 @@ footer {
   header main ul {
     display: flex;
     flex-direction: column;
-    height: 43vw;
-    width: 29%;
+    height: 63vw;
+    width: 46%;
     position: absolute;
     margin: 2px;
-    top: 45%;
+    top: 64%;
     left: -4px;
     background: #164ca1;
     transition: .4s;
     opacity: 0;
     padding: 2px 5%; }
-    header main ul li {
-      font-size: 2.4vw; }
+    header main ul li a {
+      font-size: 3.4vw; }
   header main:hover ul {
     opacity: 1; }
   article h1 {
