@@ -336,6 +336,9 @@ footer{
 888888888888888888888888888888888888*/     
 @media(max-width:600px){
     header{
+        .menu-image{
+            display: none;
+        }
         .sociais-midias-header{
             display:none;
             }
@@ -370,17 +373,6 @@ footer{
         }
         main:hover ul{
             opacity: 1;
-        }
-        .menu-image{       
-            position: absolute;
-            top: 60%!important;
-            padding: 0 10%;
-            display: flex;
-            justify-content: space-around;
-                img{
-                    width: 67px;
-                    margin:2px 1%;
-                }  
         }
 
     }
