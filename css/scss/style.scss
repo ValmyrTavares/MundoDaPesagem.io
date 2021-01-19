@@ -5,6 +5,9 @@ Variáveis
 $azaul-escuro:#164ca1;
 $branco-box:#e7e7e8;
 
+$azul-escuro:#141846;
+$azul-claro:#0e7bba;
+
 
 
 //SIZES
@@ -46,7 +49,16 @@ header{
     background-image:url("../../asset/tela1.png");
     background-size: cover;
     background-position: center center;
-  
+    .sociais-midias-header{
+        display: flex;
+        position: absolute;
+        top:5%;
+        justify-content: space-around;
+        width: 25%;
+        img{
+            width:10%
+        }
+    }
     .main-logo{
         width: 40%;
         margin: 5px 30%;
@@ -60,7 +72,7 @@ header{
         display: flex;
         justify-content: space-around;
             img{
-                width: 13%;
+                width: 20%;
                 margin:2px 1%;
             }  
     }
@@ -199,7 +211,7 @@ SERVICE /MARKETING/OPERAÇÃO/GESTÃO
 Dúvidas Frequentes 
 888888888888888888888888888888888888*/
 .questions{
-    background:$azaul-escuro;
+    background:$azul-claro;
     display:flex;
     justify-content:space-between;
     padding:1% 3%;
@@ -292,7 +304,7 @@ FOOTER
 888888888888888888888888888888888888*/
 
 footer{
-    background:$azaul-escuro;
+    background:$azul-escuro;
     width: 100%;
     display:grid;
     grid-template-columns: 1fr 4fr 1fr;
@@ -301,7 +313,10 @@ footer{
     color:white;
     padding: 2vw 3vw;
     p{
-        font-size:$size-p-desktop;
+        a{
+            font-size:$size-p-desktop;
+            color:white;
+        }
     }
     }
     .sociais-midias{
@@ -321,6 +336,9 @@ footer{
 888888888888888888888888888888888888*/     
 @media(max-width:600px){
     header{
+        .sociais-midias-header{
+            display:none;
+            }
         main{
             .btn-mobile{
                 display: block;
@@ -352,6 +370,17 @@ footer{
         }
         main:hover ul{
             opacity: 1;
+        }
+        .menu-image{       
+            position: absolute;
+            top: 60%;
+            padding: 0 10%;
+            display: flex;
+            justify-content: space-around;
+                img{
+                    width: 20%;
+                    margin:2px 1%;
+                }  
         }
 
     }
