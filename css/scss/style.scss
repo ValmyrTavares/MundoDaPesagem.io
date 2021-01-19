@@ -1,8 +1,17 @@
 /*8888888888888888888888888888888888
 Variáveis
 888888888888888888888888888888888888*/
+//COLORS
 $azaul-escuro:#164ca1;
 $branco-box:#e7e7e8;
+
+
+
+//SIZES
+$size-h1-desktop: 2.8vw;
+$size-h1-mobile: 5.5vw;
+$size-p-desktop: 1.8vw;
+$size-p-mobile: 15px;
 
 
 
@@ -69,30 +78,47 @@ header{
             padding: 0 10%;
             a{
                 color:white;
-                font-size: 1.5vw;
+                font-size: $size-p-desktop;
             }
         }
 
     }
 }
+/*8888888888888888888888888888888888
+   BALANÇA
+888888888888888888888888888888888888*/
 article{
     padding:5%;
     h1{
         text-align: center;
-        font-size: 2.8vw;
+        font-size: $size-h1-desktop;
     }
     p{
         text-align: center;
-        font-size: 1.8vw;
+        font-size: $size-p-desktop;
     }
     img{
         width: 100%;
     }
 }
+// Page  O QUE FAZEMOS
+.howToDo{
+    h1{
+        margin-bottom: 1px;
+    }
+    img{
+        width: 50%;
+        margin:0px 25%;
+    }
+    .main-img{
+        width: 100%;
+        margin:2% auto;
+    }
+}
 
 
 /*8888888888888888888888888888888888
-SERVICE
+SERVICE /MARKETING/OPERAÇÃO/GESTÃO
 888888888888888888888888888888888888*/
 .service{
     display:flex;   
@@ -102,15 +128,21 @@ SERVICE
         margin:2%;
         width: 29%;
         padding:5%;
+        transition: .9s;
         img{
             width: 100%;
         }
         h1{
             text-align:center;
-            font-size: 2.8vw;
+            font-size: $size-h1-desktop;
         }
-       
+        p{
+            display:none;
+        }
     }
+    div:hover p{
+        display: block;
+    }       
 }
 
 /*8888888888888888888888888888888888
@@ -119,6 +151,7 @@ SERVICE
 .aboutUs{
     h1{
         margin:1px;
+        font-size:$size-h1-desktop;
     }
     img{
         width: 45%;
@@ -133,6 +166,7 @@ SERVICE
         PAGE VANTAGENS
 888888888888888888888888888888888888*/
  .benefits{
+    
     img{
         width: 45%;
         margin: 0px 27%;
@@ -146,7 +180,8 @@ SERVICE
         margin:3px 10%;
     }
     .balance{
-        text-align:center
+        text-align:center;
+        margin-bottom:1px;
     }
     li{
         list-style: disc;
@@ -154,6 +189,7 @@ SERVICE
     }
     h1, p{
         text-align: left;
+     
     }
  }
 
@@ -169,14 +205,16 @@ Dúvidas Frequentes
     padding:1% 3%;
     h1{
         color:white;
-        font-size:2.3vw;
+        font-size:$size-h1-desktop;
     }
     button{
         font-size:3vw;
-        color:white;
         background:none;
         border:none;
-        font-size:5.3vw;
+        a{
+            font-size:5.3vw;
+            color:white;
+        }
     }
 }
 .doubts-section{
@@ -186,13 +224,18 @@ Dúvidas Frequentes
     div{
         background:white;
         padding: 2%;
+        p{
+            font-size: $size-p-desktop;
+        }
         span{
             color:$azaul-escuro;
             font-weight: bold;
+            font-size: $size-p-desktop;
             
         }
         li{
             list-style:disc;
+            font-size: $size-p-desktop;
         }
 
     }
@@ -209,7 +252,7 @@ Fale Conosco
     article{
         P{
             text-align: left;
-            font-size:2.5vw;
+            font-size:$size-p-desktop;
             span{
                 color:$azaul-escuro;
                 font-weight: bold;
@@ -230,13 +273,15 @@ Fale Conosco
           width: 90%;
           height: 3.5vw;
           margin:10px 6%;
+          font-size:$size-p-desktop;
         }
         textarea{
             width: 90%;
             height: 7.5vw;
             margin:10px 6%;
             color:black;
-            font-size: 18px;
+            font-size:$size-p-desktop;
+            font-family: arial;
             padding: 2%;
         }
     }
@@ -252,10 +297,12 @@ footer{
     display:grid;
     grid-template-columns: 1fr 4fr 1fr;
     padding: 1vw 3vw;
-    .menu-footer{
-        font-size: 1.3vw;
+    .menu-footer{       
     color:white;
     padding: 2vw 3vw;
+    p{
+        font-size:$size-p-desktop;
+    }
     }
     .sociais-midias{
         display: flex;
@@ -310,10 +357,16 @@ footer{
     }
     article{
         h1{
-            font-size:3.5vw;
+            font-size:$size-h1-mobile;
         }
         p{
             font-size:15px;
+        }
+    }
+    .aboutUs{
+        .balance{
+            font-size: $size-h1-mobile;
+            margin-bottom: 0;
         }
     }
     .service{
@@ -329,13 +382,16 @@ footer{
             }
             h1{    
                 font-size:7.7vw;
-            }        
+            }  
+            p{
+                font-size:$size-p-mobile;
+            }      
         }             
     }
     .questions{       
         padding:3% 4%;
         h1{
-            font-size:3.3vw;
+            font-size: $size-h1-mobile;
         }
         button{
          
@@ -352,6 +408,9 @@ footer{
          }
      };
      form{
+         h1{
+             font-size: $size-h1-mobile;
+         }
          background:$azaul-escuro;
          input{
             height: 8.5vw;
@@ -363,6 +422,14 @@ footer{
          }
 
      }
+    }
+    //DUVIDAS FREQUENTES
+    .doubts-section{
+        div{
+            p,span,li{
+                font-size: 15px;
+            }
+        }
     }
     footer{
         display: grid;
@@ -384,6 +451,12 @@ footer{
             }
         }
 
+    }
+    //VANTAGENS
+    .benefits{
+        li{
+            font-size: $size-p-mobile;
+        }
     }
 }
 

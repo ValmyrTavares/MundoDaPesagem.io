@@ -56,8 +56,11 @@ header {
     padding: 0 10%; }
     header main ul a {
       color: white;
-      font-size: 1.5vw; }
+      font-size: 1.8vw; }
 
+/*8888888888888888888888888888888888
+   BALANÇA
+888888888888888888888888888888888888*/
 article {
   padding: 5%; }
   article h1 {
@@ -69,8 +72,19 @@ article {
   article img {
     width: 100%; }
 
+.howToDo h1 {
+  margin-bottom: 1px; }
+
+.howToDo img {
+  width: 50%;
+  margin: 0px 25%; }
+
+.howToDo .main-img {
+  width: 100%;
+  margin: 2% auto; }
+
 /*8888888888888888888888888888888888
-SERVICE
+SERVICE /MARKETING/OPERAÇÃO/GESTÃO
 888888888888888888888888888888888888*/
 .service {
   display: flex;
@@ -79,18 +93,24 @@ SERVICE
     background: #e7e7e8;
     margin: 2%;
     width: 29%;
-    padding: 5%; }
+    padding: 5%;
+    transition: .9s; }
     .service div img {
       width: 100%; }
     .service div h1 {
       text-align: center;
       font-size: 2.8vw; }
+    .service div p {
+      display: none; }
+  .service div:hover p {
+    display: block; }
 
 /*8888888888888888888888888888888888
        PAGE SOBRE NÓS
 888888888888888888888888888888888888*/
 .aboutUs h1 {
-  margin: 1px; }
+  margin: 1px;
+  font-size: 2.8vw; }
 
 .aboutUs img {
   width: 45%;
@@ -116,7 +136,8 @@ SERVICE
   margin: 3px 10%; }
 
 .benefits .balance {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 1px; }
 
 .benefits li {
   list-style: disc;
@@ -135,13 +156,14 @@ Dúvidas Frequentes
   padding: 1% 3%; }
   .questions h1 {
     color: white;
-    font-size: 2.3vw; }
+    font-size: 2.8vw; }
   .questions button {
     font-size: 3vw;
-    color: white;
     background: none;
-    border: none;
-    font-size: 5.3vw; }
+    border: none; }
+    .questions button a {
+      font-size: 5.3vw;
+      color: white; }
 
 .doubts-section {
   background: #e7e7e8;
@@ -150,24 +172,28 @@ Dúvidas Frequentes
   .doubts-section div {
     background: white;
     padding: 2%; }
+    .doubts-section div p {
+      font-size: 1.8vw; }
     .doubts-section div span {
       color: #164ca1;
-      font-weight: bold; }
+      font-weight: bold;
+      font-size: 1.8vw; }
     .doubts-section div li {
-      list-style: disc; }
+      list-style: disc;
+      font-size: 1.8vw; }
 
 /*8888888888888888888888888888888888
 Fale Conosco
 888888888888888888888888888888888888*/
 .contact-us {
-  background-image: url("../../asset/map.png");
+  background-image: url("../asset/map.png");
   background-size: cover;
   background-position: center center;
   display: grid;
   grid-template-columns: 1fr 1fr; }
   .contact-us article P {
     text-align: left;
-    font-size: 2.5vw; }
+    font-size: 1.8vw; }
     .contact-us article P span {
       color: #164ca1;
       font-weight: bold; }
@@ -181,13 +207,15 @@ Fale Conosco
     .contact-us form input {
       width: 90%;
       height: 3.5vw;
-      margin: 10px 6%; }
+      margin: 10px 6%;
+      font-size: 1.8vw; }
     .contact-us form textarea {
       width: 90%;
       height: 7.5vw;
       margin: 10px 6%;
       color: black;
-      font-size: 18px;
+      font-size: 1.8vw;
+      font-family: arial;
       padding: 2%; }
 
 /*8888888888888888888888888888888888
@@ -200,9 +228,10 @@ footer {
   grid-template-columns: 1fr 4fr 1fr;
   padding: 1vw 3vw; }
   footer .menu-footer {
-    font-size: 1.3vw;
     color: white;
     padding: 2vw 3vw; }
+    footer .menu-footer p {
+      font-size: 1.8vw; }
   footer .sociais-midias {
     display: flex;
     justify-content: space-around;
@@ -239,9 +268,12 @@ footer {
   header main:hover ul {
     opacity: 1; }
   article h1 {
-    font-size: 3.5vw; }
+    font-size: 5.5vw; }
   article p {
     font-size: 15px; }
+  .aboutUs .balance {
+    font-size: 5.5vw;
+    margin-bottom: 0; }
   .service {
     display: flex;
     flex-direction: column; }
@@ -254,10 +286,12 @@ footer {
         margin: 1px 9%; }
       .service div h1 {
         font-size: 7.7vw; }
+      .service div p {
+        font-size: 15px; }
   .questions {
     padding: 3% 4%; }
     .questions h1 {
-      font-size: 3.3vw; }
+      font-size: 5.5vw; }
     .questions button {
       font-size: 6.3vw; }
   .contact-us {
@@ -269,12 +303,16 @@ footer {
         font-size: 16px; }
     .contact-us form {
       background: #164ca1; }
+      .contact-us form h1 {
+        font-size: 5.5vw; }
       .contact-us form input {
         height: 8.5vw;
         font-size: 13px; }
       .contact-us form textarea {
         height: 150px;
         font-size: 15px; }
+  .doubts-section div p, .doubts-section div span, .doubts-section div li {
+    font-size: 15px; }
   footer {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -286,4 +324,6 @@ footer {
       line-height: 20px; }
     footer .sociais-midias img {
       width: 5vw;
-      height: 6vw; } }
+      height: 6vw; }
+  .benefits li {
+    font-size: 15px; } }
