@@ -88,9 +88,21 @@ header{
             display:flex;
             justify-content: space-around;
             padding: 0 10%;
-            a{
-                color:white;
-                font-size: $size-p-desktop;
+            li:nth-last-child(1){
+                border-right: none;
+            }
+            li{
+                border-right: solid white 2px;
+                padding-right: 3%;
+           
+                a{
+                    color:white;
+                    font-size: 1.5vw;
+                }
+                & a:hover {
+                    text-decoration:underline ;
+                }
+
             }
         }
 
@@ -139,14 +151,15 @@ SERVICE /MARKETING/OPERAÇÃO/GESTÃO
         background:$branco-box;
         margin:2%;
         width: 29%;
-        padding:5%;
+        padding:5% 2%;
         transition: .9s;
         img{
-            width: 100%;
+            width: 80%;
+            margin: 1px 10%
         }
         h1{
             text-align:center;
-            font-size: $size-h1-desktop;
+            font-size:2vw;
         }
         p{
             display:none;
@@ -154,6 +167,7 @@ SERVICE /MARKETING/OPERAÇÃO/GESTÃO
     }
     div:hover p{
         display: block;
+        font-size:$size-p-desktop;
     }       
 }
 
@@ -313,9 +327,11 @@ footer{
     color:white;
     padding: 2vw 3vw;
     p{
+        font-size:1.3vw;
         a{
             font-size:$size-p-desktop;
             color:white;
+            font-size:1.3vw;
         }
     }
     }
@@ -330,7 +346,23 @@ footer{
     }
  
 }
+@media(min-width:1500px){
+    p, li, a{
+       font-size:27px!important;
+    }
+    .contact-us{
+        form{
+            input{
+                font-size:27px;                
+            }
+            textarea{
+                font-size:27px;    
+            }
+        }
+    }
+ 
 
+}
 /*8888888888888888888888888888888888
             MOBILE
 888888888888888888888888888888888888*/     
