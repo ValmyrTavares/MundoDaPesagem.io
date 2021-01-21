@@ -440,7 +440,11 @@ footer{
             p{
                 font-size:$size-p-mobile;
             }      
-        }             
+        }      
+        div:hover p{
+            display: block;
+            font-size:$size-p-mobile;
+        }        
     }
     .questions{       
         padding:3% 4%;
