@@ -299,16 +299,16 @@ Fale Conosco
           width: 90%;
           height: 3.5vw;
           margin:10px 6%;
-          font-size:$size-p-desktop;
+          font-size:1.3vw;
         }
         textarea{
             width: 90%;
             height: 7.5vw;
             margin:10px 6%;
             color:black;
-            font-size:$size-p-desktop;
+            font-size:1.3vw;
             font-family: arial;
-            padding: 2%;
+            padding: 1.5% .5%;
         }
     }
 }
@@ -360,6 +360,18 @@ footer{
             }
         }
     }
+    .contact-us{
+        form{
+            input{
+                font-size: 20px;
+            }
+            textarea{
+                font-size: 20px;
+            }
+        }
+
+    }
+  
  
 
 }
