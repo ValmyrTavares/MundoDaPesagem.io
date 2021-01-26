@@ -381,7 +381,7 @@ footer{
 @media(max-width:600px){
     header{
         .menu-image{
-            display: none;
+            display: flex;
         }
         .sociais-midias-header{
             display:none;
