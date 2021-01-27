@@ -45,7 +45,7 @@ HEADER
 header{
     position: relative;
     width: 100%;
-    height: 60vw;
+    height: 37vw;
     background-image:url("../../asset/tela1.png");
     background-size: cover;
     background-position: center center;
@@ -60,10 +60,10 @@ header{
         }
     }
     .main-logo{
-        width: 40%;
-        margin: 5px 30%;
+        width: 30%;
+        margin: 3px 35%;
         position: absolute;
-        top: 10%;
+        top: 4%;
     }
     .menu-image{       
         position: absolute;
@@ -72,7 +72,7 @@ header{
         display: flex;
         justify-content: space-around;
             img{
-                width: 20%;
+                width: 12%;
                 margin:2px 1%;
             }  
     }
@@ -327,11 +327,11 @@ footer{
     color:white;
     padding: 2vw 3vw;
     p{
-        font-size:1.3vw;
+        font-size:1.3vw !important;
         a{
             font-size:$size-p-desktop;
             color:white;
-            font-size:1.3vw;
+            font-size:1.3vw !important;
         }
     }
     }
@@ -346,6 +346,12 @@ footer{
     }
  
 }
+/*8888888888888888888888888888888888
+     size DESKTOP BIGGER THAN 1500PX
+888888888888888888888888888888888888*/
+
+
+
 @media(min-width:1500px){
     p, li, a{
        font-size:27px!important;
@@ -370,6 +376,23 @@ footer{
             }
         }
 
+    }
+    footer{
+        .menu-footer{
+            p{
+                a{
+                    font-size:1.3vw !important;
+
+                }
+            }
+        }
+    }
+    .questions{
+        button{
+            a{
+                font-size:70px!important;
+            }
+        }
     }
   
  
@@ -512,6 +535,7 @@ footer{
             p{
                 text-align: center;
                 line-height: 20px;
+                font-size: 1.4vw;
             }
         }
         .sociais-midias{
