@@ -509,8 +509,9 @@ footer{
 888888888888888888888888888888888888*/     
 @media(max-width:600px){
     header{
+        background-image:url("../../asset/tela2.png");
         .menu-image{
-            display: flex;
+            display: none;
         }
         .sociais-midias-header{
             display:none;

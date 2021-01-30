@@ -363,35 +363,37 @@ footer {
             MOBILE
 888888888888888888888888888888888888*/
 @media (max-width: 600px) {
-  header .menu-image {
-    display: flex; }
-  header .sociais-midias-header {
-    display: none; }
-  header main .btn-mobile {
-    display: block;
-    width: 12%;
-    position: absolute;
-    top: 7vw;
-    left: 16px; }
-  header main ul {
-    display: flex;
-    flex-direction: column;
-    height: 63vw;
-    width: 46%;
-    position: absolute;
-    margin: 2px;
-    top: 64%;
-    left: -4px;
-    background: #164ca1;
-    transition: .4s;
-    opacity: 0;
-    padding: 2px 5%; }
-    header main ul li {
-      border: none; }
-      header main ul li a {
-        font-size: 3.4vw; }
-  header main:hover ul {
-    opacity: 1; }
+  header {
+    background-image: url("../asset/tela2.png"); }
+    header .menu-image {
+      display: none; }
+    header .sociais-midias-header {
+      display: none; }
+    header main .btn-mobile {
+      display: block;
+      width: 12%;
+      position: absolute;
+      top: 7vw;
+      left: 16px; }
+    header main ul {
+      display: flex;
+      flex-direction: column;
+      height: 63vw;
+      width: 46%;
+      position: absolute;
+      margin: 2px;
+      top: 64%;
+      left: -4px;
+      background: #164ca1;
+      transition: .4s;
+      opacity: 0;
+      padding: 2px 5%; }
+      header main ul li {
+        border: none; }
+        header main ul li a {
+          font-size: 3.4vw; }
+    header main:hover ul {
+      opacity: 1; }
   .header-register .menu-image {
     display: flex; }
   .header-register main .btn-mobile {
