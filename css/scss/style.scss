@@ -46,7 +46,7 @@ header{
     position: relative;
     width: 100%;
     height: 37vw;
-    background-image:url("../asset/tela1.png");
+    background-image:url("../../asset/tela1.png");
     background-size: cover;
     background-position: center center;
     .sociais-midias-header{
@@ -290,7 +290,7 @@ Fale Conosco
 888888888888888888888888888888888888*/
 .contact-us{
     opacity: 0;
-    background-image:url("../asset/map.png");
+    background-image:url("../../asset/map.png");
     background-size: cover;
     background-position: center center;
     display:grid;
@@ -531,7 +531,7 @@ footer{
 888888888888888888888888888888888888*/     
 @media(max-width:600px){
     header{
-        background-image:url("../asset/tela2.png");
+        background-image:url("../../asset/tela2.png");
         .menu-image{
             display: none;
         }
