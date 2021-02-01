@@ -27,7 +27,7 @@ header {
   position: relative;
   width: 100%;
   height: 37vw;
-  background-image: url("../asset/tela1.png");
+  background-image: url("../../asset/tela1.png");
   background-size: cover;
   background-position: center center; }
   header .sociais-midias-header {
@@ -52,32 +52,35 @@ header {
     header .menu-image img {
       width: 12%;
       margin: 2px 1%; }
-  header main .btn-mobile {
-    display: none; }
-  header main ul {
-    position: absolute;
-    margin: 2px;
-    top: 90%;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    padding: 0 10%; }
-    header main ul li:nth-last-child(1) {
-      border-right: none; }
-    header main ul li {
-      border-right: solid white 2px;
-      padding-right: 3%; }
-      header main ul li a {
-        color: white;
-        font-size: 1.5vw; }
-      header main ul li a:hover {
-        text-decoration: underline; }
+  header main {
+    z-index: 20; }
+    header main .btn-mobile {
+      display: none; }
+    header main ul {
+      position: absolute;
+      margin: 2px;
+      top: 90%;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      padding: 0 10%; }
+      header main ul li:nth-last-child(1) {
+        border-right: none; }
+      header main ul li {
+        border-right: solid white 2px;
+        padding-right: 3%; }
+        header main ul li a {
+          color: white;
+          font-size: 1.5vw; }
+        header main ul li a:hover {
+          text-decoration: underline; }
 
 /*8888888888888888888888888888888888
    BALANÇA
 888888888888888888888888888888888888*/
 article {
-  padding: 5%; }
+  opacity: 0;
+  padding: 1% 5%; }
   article h1 {
     text-align: center;
     font-size: 2.8vw; }
@@ -86,6 +89,17 @@ article {
     font-size: 1.8vw; }
   article img {
     width: 100%; }
+
+.anima {
+  animation: show 1s forwards; }
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0); }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
 
 .howToDo h1 {
   margin-bottom: 1px; }
@@ -102,6 +116,7 @@ article {
 SERVICE /MARKETING/OPERAÇÃO/GESTÃO
 888888888888888888888888888888888888*/
 .service {
+  opacity: 0;
   display: flex;
   padding: 5%; }
   .service div {
@@ -167,6 +182,7 @@ SERVICE /MARKETING/OPERAÇÃO/GESTÃO
 Dúvidas Frequentes 
 888888888888888888888888888888888888*/
 .questions {
+  opacity: 0;
   background: #0e7bba;
   display: flex;
   justify-content: space-between;
@@ -203,7 +219,8 @@ Dúvidas Frequentes
 Fale Conosco
 888888888888888888888888888888888888*/
 .contact-us {
-  background-image: url("../asset/map.png");
+  opacity: 0;
+  background-image: url("../../asset/map.png");
   background-size: cover;
   background-position: center center;
   display: grid;
@@ -364,7 +381,7 @@ footer {
 888888888888888888888888888888888888*/
 @media (max-width: 600px) {
   header {
-    background-image: url("../asset/tela2.png"); }
+    background-image: url("../../asset/tela2.png"); }
     header .menu-image {
       display: none; }
     header .sociais-midias-header {
@@ -387,7 +404,8 @@ footer {
       background: #164ca1;
       transition: .4s;
       opacity: 0;
-      padding: 2px 5%; }
+      padding: 2px 5%;
+      z-index: 20; }
       header main ul li {
         border: none; }
         header main ul li a {
@@ -422,6 +440,16 @@ footer {
         color: white; }
   .header-register main:hover ul {
     opacity: 1; }
+  .register {
+    display: block; }
+    .register form input {
+      height: 8.5vw;
+      font-size: 13px; }
+    .register form textarea {
+      height: 8.5vw;
+      font-size: 13px; }
+    .register article p {
+      font-size: 16px; }
   article h1 {
     font-size: 5.5vw; }
   article p {
